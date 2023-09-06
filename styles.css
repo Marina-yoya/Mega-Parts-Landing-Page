@@ -394,3 +394,9 @@
     border: 0.75px #E59D48 solid;
 }
 
+
+
+.banners-slider img {
+    width: 100%;
+    height: 299px;
+}
