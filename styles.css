@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100&family=Playfair+Display&display=swap');
 
+body {
+    overflow-x: hidden; 
+}
 .upper-nav {
     height: 60px;
     background-color: #19242D;
@@ -360,7 +363,7 @@
 
 .sections-btns .search-btns:nth-child(2) {
     background: none;
-    
+
     padding-left: 22px;
     padding-right: 22px;
     padding-top: 6px;
@@ -374,21 +377,24 @@
 }
 
 .sections-btns .search-btns:not(:first-child) a {
-  color: #19242D;
+    color: #19242D;
 }
 
 .sections-btns .search-btns:nth-child(3) {
     background: none;
     border: 0.75px #5FB865 solid;
 }
+
 .sections-btns .search-btns:nth-child(4) {
     background: none;
     border: 0.75px #63C7C9 solid;
 }
+
 .sections-btns .search-btns:nth-child(5) {
     background: none;
     border: 0.75px #DC5426 solid;
 }
+
 .sections-btns .search-btns:nth-child(6) {
     background: none;
     border: 0.75px #E59D48 solid;
@@ -399,4 +405,100 @@
 .banners-slider img {
     width: 100%;
     height: 299px;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* product slider */
+
+.product-slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 333.49px;
+    margin-top: 18px;
+    background: #FEFEFE;
+}
+
+.cards {
+    width: 271px;
+    height: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 20px;
+    background: #008AEE;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    border: 1px #008AEE solid;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 49px;
+    display: inline-flex;
+}
+
+.header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+}
+
+.logo-vector {
+    width: 32px;
+    height: 32px;
+
+}
+
+.title {
+    color: white;
+    font-size: 26px;
+    font-family: Exo 2;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.description {
+    align-self: stretch;
+    text-align: center;
+    color: #EDEDED;
+    font-size: 16px;
+    font-family: Exo 2;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.button-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: white;
+    border-radius: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.button-text {
+    color: #008AEE;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 700;
+    word-wrap: break-word;
+    border: none;
+    background: none;
+}
+
+.arrow {
+    margin-bottom: 2px;
 }
