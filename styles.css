@@ -554,3 +554,17 @@ body {
     font-weight: 700;
     word-wrap: break-word
 }
+
+.cards.card-parts {
+    background-color:#5FB865;
+    margin-left: 30px;
+}
+
+.cards.card-parts .button-text {
+    color: #5FB865;
+}
+
+
+.upper-text.offers {
+    left: 20%;
+}
