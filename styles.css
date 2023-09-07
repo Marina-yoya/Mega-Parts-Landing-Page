@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100&family=Playfair+Display&display=swap');
 
 body {
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
+
 .upper-nav {
     height: 60px;
     background-color: #19242D;
@@ -419,15 +420,28 @@ body {
 .product-slider {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
     height: 333.49px;
     margin-top: 18px;
     background: #FEFEFE;
+    position: relative;
 }
+
+.upper-text {
+    position: absolute;
+    top: 13px;
+    left: 35%;
+    color: #19242D;
+    font-size: 16px;
+    font-family: Exo 2;
+    font-weight: 700; 
+}
+
 
 .cards {
     width: 271px;
-    height: 90%;
+    height: 271px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 25px;
@@ -470,7 +484,7 @@ body {
     align-self: stretch;
     text-align: center;
     color: #EDEDED;
-    font-size: 16px;
+    font-size: 13px;
     font-family: Exo 2;
     font-weight: 500;
     word-wrap: break-word;
@@ -481,6 +495,7 @@ body {
     padding-right: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-top: -20px;
     background: white;
     border-radius: 25px;
     justify-content: flex-start;
@@ -501,4 +516,41 @@ body {
 
 .arrow {
     margin-bottom: 2px;
+}
+
+.part-container {
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.part-description {
+    color: #19242D;
+    font-size: 12.61px;
+    font-family: Exo 2;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.category {
+
+    color: #999999;
+    font-size: 12.52px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.sum {
+    color: #5FB865;
+    font-size: 15.78px;
+    font-family: Exo 2;
+    font-weight: 700;
+    word-wrap: break-word
 }
