@@ -417,7 +417,8 @@ body {
 
 /* product slider */
 
-.product-slider {
+.product-slider,
+.services {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -435,7 +436,7 @@ body {
     color: #19242D;
     font-size: 16px;
     font-family: Exo 2;
-    font-weight: 700; 
+    font-weight: 700;
 }
 
 
@@ -450,11 +451,11 @@ body {
     background: #008AEE;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     border-radius: 25px;
-    border: 1px #008AEE solid;
+    border: 1px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 49px;
+    gap: 40px;
     display: inline-flex;
 }
 
@@ -556,7 +557,7 @@ body {
 }
 
 .cards.card-parts {
-    background-color:#5FB865;
+    background-color: #5FB865;
     margin-left: 30px;
 }
 
@@ -567,4 +568,55 @@ body {
 
 .upper-text.offers {
     left: 20%;
+}
+
+
+/* services section */
+
+.card-service {
+    background: #63C7C9;
+    margin-left: 30px;
+}
+
+.card-service .button-text {
+    color: #63C7C9;
+    
+}
+
+.card-selling {
+    background: #DC5426;
+    margin-left: 30px;
+}
+
+.card-selling .button-text {
+    color: #DC5426;
+}
+
+.parts-selling {
+    background: #E59D48;
+    margin-left: 30px;
+}
+
+.parts-selling .button-text {
+    color: #E59D48;
+}
+
+.games {
+    background: #BD5FE9;
+    margin-left: 30px;
+}
+
+.games .button-text {
+    color: #BD5FE9;
+}
+
+.mega-cars {
+    margin-top: -38px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 700;
+    word-wrap: break-word
 }
