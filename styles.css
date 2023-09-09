@@ -896,6 +896,23 @@ body {
 
 
 
+.map-section{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-top: 75px;
+    justify-content: space-around;
+    position: relative;
+}
 
 
+.popup {
+    position: absolute;
+    display: none;
+    background: #a1d0f1;
+    color: #008AEE; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
 
+}
