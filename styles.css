@@ -154,8 +154,9 @@ body {
 .second-line .nav-btn:nth-child(8) {
     background: #202D39;
     border: 0.75px #DC5426 solid;
-
+    
 }
+
 
 .last-nav-btn {
     position: relative;
@@ -164,13 +165,27 @@ body {
 .last-nav-btn::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
+    top: -2px;
+    left: 123px;
+    width: 58%;
+    height: 46px;
     background-color: #202D39;
     z-index: 3;
     overflow: hidden;
+}
+
+.last-nav-btn .nav-btns {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: Exo 2, sans-serif;
+    font-weight: 500;
+    background: linear-gradient(90deg, #FFF -0.31%, rgba(255, 255, 255, 0.00) 35.35%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    word-wrap: break-word;
 }
 
 .last-nav-btn img {

@@ -1,6 +1,15 @@
 
 $(document).ready(function () {
 
+    const loginButton = $('.login-btn');
+    loginButton.click(function() {
+      window.location.href = 'loginPage.php';
+    });
+
+
+
+
+
     const mapImage = $('#map-image');
     const popup = $('#popup');
     const range1 = { minX: 150, maxX: 300, minY: 235, maxY: 355 };
