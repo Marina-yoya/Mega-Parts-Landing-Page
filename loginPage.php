@@ -18,7 +18,12 @@
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
       <p class="error">
-        <?php echo $error; ?>
+      <?php
+    if (isset($_SESSION['login_error'])) {
+        echo htmlspecialchars($_SESSION['login_error']);
+        unset($_SESSION['login_error']); 
+    }
+    ?>
       </p>
       <input type="submit" value="Login">
     </form>

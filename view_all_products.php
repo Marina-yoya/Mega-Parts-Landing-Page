@@ -1,32 +1,19 @@
 <?php
 require_once 'config.php';
-session_start();
 
-
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit();
-}
-
-$user_id = $_SESSION['user_id'];
-
-$query = "SELECT * FROM products WHERE user_id = ?";
+$query = "SELECT * FROM products";
 $stmt = $db->prepare($query);
-$stmt->execute([$user_id]);
+$stmt->execute();
 $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="myProducts.css">
-    <title>My Products</title>
+    <title>View All Products</title>
 </head>
-
 <body>
     <header>
         <div class="logo">
@@ -35,7 +22,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <nav>
             <ul class="nav-links">
                 <li><a href="profile.php">Add product</a></li>
-                <li><a href="view_all_products.php">View All Products</a></li>
+                <li><a href="my_products.php">My Products</a></li>
             </ul>
         </nav>
     </header>
@@ -54,14 +41,8 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <?php echo number_format($product['price'], 2); ?>
                     </p>
                 </div>
-                <div class="product-actions">
-                    <a href="edit_product.php?product_id=<?php echo $product['product_id']; ?>" class="edit-button">Edit</a>
-                    <a href="delete_product.php?product_id=<?php echo $product['product_id']; ?>"
-                        class="delete-button">Delete</a>
-                </div>
             </div>
         <?php endforeach; ?>
     </div>
 </body>
-
 </html>

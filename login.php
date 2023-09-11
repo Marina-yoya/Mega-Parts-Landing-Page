@@ -21,7 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: profile.php");
         exit();
     } else {
-        $error = "Incorrect email or password. Please try again.";
+        $_SESSION['login_error'] = "Invalid email or password.";
+        header("Location: loginPage.php");
+        exit();
     }
 }
 ?>
