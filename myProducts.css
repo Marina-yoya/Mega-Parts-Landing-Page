@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #19242D;;
+    background-color: #19242D;
     color: #fff;
     padding: 10px;
     display: flex;
@@ -22,7 +22,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
-   
+
 }
 
 nav ul li a {
@@ -35,25 +35,22 @@ h2 {
     justify-content: space-around;
 }
 
-
 .container {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: flex-start; 
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .part-container {
-   
+
     flex: 0 0 calc(33.33% - 20px);
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin: 10px; 
-    max-width: 300px; 
-    
+    margin: 10px;
+    max-width: 300px;
 }
-
 
 .part-container img {
     max-width: 100%;
@@ -76,10 +73,33 @@ h2 {
 
 .category {
     font-weight: bold;
-    color: #007bff; 
+    color: #007bff;
 }
 
 .sum {
     font-weight: bold;
-    color: #009900; 
+    color: #009900;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #0056b3;
 }
